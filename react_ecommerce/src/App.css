@@ -1,0 +1,299 @@
+.App {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-family: "Pacifico", cursive;
+  font-family: "Silkscreen", cursive;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box !important;
+}
+* body {
+  width: 100vw !important;
+}
+
+.z-1 {
+  font-size: 1rem;
+  color: green;
+}
+
+.card_trolly {
+  position: relative;
+}
+.card_trolly :hover {
+  color: rgb(51, 255, 0);
+}
+
+.card_trolly-top {
+  position: absolute;
+  font-size: xx-small;
+  border-radius: 5rem;
+  padding: 0 5%;
+  background-color: aliceblue;
+  color: black;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.imported-footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+.imported-footer .footer-section {
+  background: #151414;
+  position: relative;
+}
+.imported-footer .footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.imported-footer .single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.imported-footer .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.imported-footer .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.imported-footer .cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.imported-footer .footer-content {
+  position: relative;
+  z-index: 2;
+}
+.imported-footer .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.imported-footer .footer-logo {
+  margin-bottom: 30px;
+}
+.imported-footer .footer-logo img {
+  max-width: 200px;
+}
+.imported-footer .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.imported-footer .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.imported-footer .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.imported-footer .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.imported-footer .facebook-bg {
+  background: #3B5998;
+}
+.imported-footer .twitter-bg {
+  background: #55ACEE;
+}
+.imported-footer .google-bg {
+  background: #DD4B39;
+}
+.imported-footer .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.imported-footer .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.imported-footer .footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.imported-footer .footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+.imported-footer .footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.imported-footer .subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.imported-footer .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.imported-footer .subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.imported-footer .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.imported-footer .copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.imported-footer .copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.imported-footer .copyright-text p a {
+  color: #ff5e14;
+}
+.imported-footer .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.imported-footer .footer-menu li:hover a {
+  color: #ff5e14;
+}
+.imported-footer .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.LinkNone {
+  text-decoration: none;
+  width: 100rem;
+  flex-wrap: wrap;
+}
+
+.WidthFixer {
+  width: 50vw;
+  max-width: 100vw !important;
+}
+
+.featureProducts {
+  width: 98vw;
+}
+.featureProducts div {
+  width: 20rem !important;
+  height: 20rem;
+  shape-outside: margin-box;
+  border: none;
+}
+
+.button {
+  background-color: #3B5998;
+}
+
+.button.animated {
+  /* animated styles */
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  color: #ff5e14;
+  transition: 1s;
+}
+.button.animated from {
+  transform: rotate(0deg);
+}
+.button.animated to {
+  transform: rotate(360deg);
+}
+
+@-webkit-keyframes shake {
+  /* animation keyframes */
+}
+
+@keyframes shake {
+  /* animation keyframes */
+}
+.ProductColorStyle {
+  border: 1px solid black;
+  border-radius: 0.1rem;
+  margin: 2px;
+}
+
+.singleImageStyle {
+  width: 10rem !important;
+}/*# sourceMappingURL=App.css.map */
