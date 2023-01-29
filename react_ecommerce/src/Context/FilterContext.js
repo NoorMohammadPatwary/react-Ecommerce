@@ -1,11 +1,14 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer, useState } from "react";
 import { FiltreReducerFunction } from "../Reducer/FilterReducer";
 import { useProductContext } from "./AppContext";
 const InnitialState={
     FilterProducts: [],
     AllProductsList: [],
-    Gridvew: true,
+   SortingValue: "Lowest"
 }
+
+
+
 
 export  const FilterContext = createContext();
 export  const FilterContextProvider = ({children})=>{
@@ -20,9 +23,14 @@ export  const FilterContextProvider = ({children})=>{
     useEffect(() => {
         dispatch ({type :"LoadFilterProduct", payload: products})
     }, [products])
-    
 
-    return <FilterContext.Provider value={{  ...state ,setGridvewF}}  > { children} </FilterContext.Provider>
+    const  Sorting=(() => {
+        
+        dispatch ({type :"Gate_sort_value", payload: products})
+    })
+
+
+    return <FilterContext.Provider value={{  ...state ,setGridvewF,Sorting}}  > { children} </FilterContext.Provider>
 }
 
 

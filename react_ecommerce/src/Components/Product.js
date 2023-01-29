@@ -11,7 +11,7 @@ export default function Product(currentElement) {
   return (
     <>
     <NavLink to={`/Products/${id}`}>
-      <figure className={`card w-25  m-sm-5 m-md-3 m-lg-1`}>
+      <figure className={`card w-25  d-inline-flex m-sm-5 m-md-3 m-lg-1`}>
         <img src={image} alt="" srcset=""  style={{width: "15rem" }} />
         <div className=' d-flex align-items-center justify-content-between'>
          <h6 className=' text-decoration-none'> {name} /</h6>
