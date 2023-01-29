@@ -22,11 +22,10 @@ export  const FiltreReducerFunction =(state,action)=>{
     }
 
     if (action.type==="Gate_sort_value") {
-        let userSortValue= document.getElementById("sort");
-        let sort_value=userSortValue.options[userSortValue.selectedIndex].value
+        
         return {
          ...state,
-         SortingValue: sort_value,    
+         SortingValue: action.payload,    
         }
     }
     return state;

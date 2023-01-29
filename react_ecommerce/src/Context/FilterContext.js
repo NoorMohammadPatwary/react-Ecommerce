@@ -24,9 +24,10 @@ export  const FilterContextProvider = ({children})=>{
         dispatch ({type :"LoadFilterProduct", payload: products})
     }, [products])
 
-    const  Sorting=(() => {
-        
-        dispatch ({type :"Gate_sort_value", payload: products})
+    const  Sorting=((e) => {
+        const x_value=e.target.value
+        console.log("🚀 ~ file: FilterContext.js:29 ~ Sorting ~ x_value", x_value)
+        dispatch ({type :"Gate_sort_value", payload: x_value})
     })
 
 
