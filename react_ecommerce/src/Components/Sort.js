@@ -6,8 +6,8 @@ import { useFilterContext } from '../Context/FilterContext'
 
 
 export const Sort = () => {
-  const {Sorting,SortingValue} =useFilterContext();
-  console.log("🚀 ~ file: Sort.js:10 ~ Sort ~ SortingValue", SortingValue)
+  const {SortingDataGateFunction,FilterDataValue} =useFilterContext();
+  console.log("🚀 ~ file: Sort.js:10 ~ Sort ~ FilterDataValuexxxxxxxxxxxxxxx", FilterDataValue)
   
   
   return (
@@ -23,9 +23,9 @@ export const Sort = () => {
     <form>
       <label htmlFor="sort "></label>
 
-       <select name="sort" id="sort" className="" onClick={Sorting}>
-        <option value="Lowest" className=''>Lowest</option>
-        <option value="Highest">Highest</option>
+       <select name="sort" id="sort" className="" onClick={SortingDataGateFunction}>
+        <option value="lowest" className=''>Lowest</option>
+        <option value="highest">Highest</option>
         <option value="a-z">a-z</option>
         <option value="z-a">z-a</option>
 
