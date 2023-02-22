@@ -25,17 +25,22 @@ export const FiltreReducerFunction=(state, action)=>{
         ...state,
         filters: {
           ...state.filters,
-          [action.payload]: action.value,
-        }
+          [action.payload]: action.value},
       }
+      
 
       case "Gate_filter_value2":
       let { AllProductsList }= state;
-      let tempProduct = AllProductsList;
-      let {texts} = state.filters;
+      let tempProduct = [...AllProductsList];
+      let {text} = state.filters;
+      let {category} = state.filters;
+      console.log("🚀 ~ file: FilterReducer.js:37 ~ FiltreReducerFunction ~ category:", category)
 
-      if (texts) {
-        tempProduct=tempProduct.filter((currentElm)=>currentElm.name.toLowerCase().includes(texts))
+      if (text) {
+        tempProduct=tempProduct.filter((currentElm)=>currentElm.name.toLowerCase().startsWith(text))
+      }
+      if (category) {
+        tempProduct=tempProduct.filter((currentElm)=>currentElm.category===category)
       }
 
       return{

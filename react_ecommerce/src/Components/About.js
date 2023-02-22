@@ -1,10 +1,12 @@
 import React from 'react'
-import OpenAIComponent from './OpenAIComponent'
+// import OpenAIComponent from './OpenAIComponent'
 
 const About = () => {
   return (
     <>
-    <OpenAIComponent/>
+    {/* <OpenAIComponent/> */}
+
+    
     </>
   )
 }

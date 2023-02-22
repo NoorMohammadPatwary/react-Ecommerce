@@ -9,6 +9,8 @@ const InnitialState = {
 
   filters: {
     text: "",
+    category: "all",
+    company: "all",
   },
 };
 
@@ -46,7 +48,7 @@ export const FilterContextProvider = ({ children }) => {
     let name = e.target.name;
     let value = e.target.value;
     dispatch({
-      type: "Update_Serch_filter_value",
+      type: "Update_Serch_filter_value", 
       payload: name,
       value: value,
     });
